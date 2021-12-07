@@ -6,16 +6,16 @@ inputs:
     description: 'onemessage webhook'
     required: true
 
-  type:
-    description: 'message type'
+  robotKey:
+    description: 'token'
     default: 'text'
 
-  content:
+  msg:
     description: 'message content'
     required: true
 
-  at:
-    description: 'at users'
+  failWhenError:
+    description: 'fail when error '
 
 runs:
   using: 'docker'
@@ -24,3 +24,4 @@ runs:
 branding:
   color: "blue"
   icon: "message-square"
+  - name: onemessage robot message
